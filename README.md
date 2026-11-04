@@ -17,6 +17,8 @@ Você **não precisa instalar nada**. O Python roda no navegador, dentro do GitH
 5. O arquivo `aulas/aula1.ipynb` abre sozinho. Clique na primeira célula de código e aperte `Shift + Enter`.
 6. Se aparecer um pedido para escolher o **kernel**, escolha **Python 3.12** (ou o Python que aparecer na lista).
 
+> **O codespace aparece como "offline" ou não carrega?** Quase sempre é um bloqueador de anúncios (como o uBlock Origin) ou a proteção contra rastreamento do navegador. Desative-os só para o site do codespace (`github.dev`) e recarregue a página, ou abra uma janela anônima sem extensões. Se ainda assim não funcionar, abra o codespace no **Visual Studio Code** instalado no computador (menu do codespace, **Open in Visual Studio Code**).
+
 ---
 
 ## Como a aula funciona
