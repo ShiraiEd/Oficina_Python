@@ -1,11 +1,12 @@
 {
   "name": "Oficina de Lógica com Python",
   "image": "mcr.microsoft.com/devcontainers/python:3.12",
-  "postCreateCommand": "pip install --quiet ipykernel && chmod +x checar.py && sudo ln -sf \"$(pwd)/checar.py\" /usr/local/bin/checar || echo 'Atalho checar nao criado: use python checar.py exercicio1.ipynb'",
+  "postCreateCommand": "pip install --quiet ipykernel && python -m ipykernel install --user --name python3 --display-name 'Python 3.12'; chmod +x checar.py; sudo ln -sf \"$(pwd)/checar.py\" /usr/local/bin/checar || echo 'Atalho checar nao criado: use python checar.py exercicio1.ipynb'",
   "customizations": {
     "vscode": {
       "extensions": ["ms-python.python", "ms-toolsai.jupyter"],
       "settings": {
+        "python.defaultInterpreterPath": "/usr/local/bin/python",
         "editor.fontSize": 16,
         "editor.tabSize": 4,
         "editor.insertSpaces": true,
